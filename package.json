@@ -1,0 +1,16 @@
+{
+  "name": "picard.js.org",
+  "version": "0.0.1",
+  "description": "Website for Picard.js",
+  "license": "MIT",
+  "author": "Florian Rappl",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "vitepress": "1.0.1"
+  },
+  "scripts": {
+    "start": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  }
+}
