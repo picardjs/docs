@@ -21,6 +21,9 @@ jobs:
       - name: Build Website
         run: |
           npm run build
+      - name: Set Custom Domain
+        run: |
+          echo "picard.js.org" > .vitepress/dist/CNAME
       - name: Deploy Website
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
