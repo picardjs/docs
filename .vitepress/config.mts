@@ -5,7 +5,7 @@ export default defineConfig({
   description:
     "The captain for the next generation of micro frontends federation.",
 
-  srcExclude: ['**/README.md'],
+  srcExclude: ["**/README.md"],
 
   head: [
     ["link", { rel: "icon", type: "image/png", href: "/picard-logo-mini.png" }],
@@ -36,19 +36,76 @@ export default defineConfig({
     logo: { src: "/picard-logo-mini.png", width: 24, height: 24 },
 
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/docs/examples" },
+      { text: "Guide", link: "/guide/" },
+      { text: "API", link: "/api/" },
     ],
 
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/docs/examples" },
-          { text: "Runtime API Examples", link: "/docs/examples/api" },
-        ],
-      },
-    ],
+    sidebar: {
+      "/guide/": [
+        {
+          text: "Guide",
+          items: [
+            { text: "Getting Started", link: "/guide/" },
+            { text: "Why Picard.js?", link: "/guide/why" },
+          ],
+        },
+        {
+          text: "Web Components",
+          items: [
+            { text: "pi-component", link: "/guide/components/pi-component" },
+            { text: "pi-slot", link: "/guide/components/pi-slot" },
+            { text: "pi-part", link: "/guide/components/pi-part" },
+          ],
+        },
+        {
+          text: "Variants",
+          items: [
+            { text: "Browser", link: "/guide/variants/browser" },
+            { text: "Node.js", link: "/guide/variants/node" },
+            { text: "Electron", link: "/guide/variants/electron" },
+          ],
+        },
+        {
+          text: "Formats",
+          items: [
+            { text: "Module Federation", link: "/guide/formats/module-federation" },
+            { text: "Native Federation", link: "/guide/formats/native-federation" },
+            { text: "Pilet", link: "/guide/formats/pilet" },
+          ],
+        },
+        {
+          text: "Frameworks",
+          items: [
+            { text: "Default", link: "/guide/frameworks/default" },
+            { text: "HTML", link: "/guide/frameworks/html" },
+            { text: "single-spa", link: "/guide/frameworks/single-spa" },
+          ],
+        },
+      ],
+      "/api/": [
+        {
+          text: "API",
+          items: [
+            { text: "Overview", link: "/api/" },
+            { text: "pi-component", link: "/api/pi-component" },
+            { text: "pi-slot", link: "/api/pi-slot" },
+            { text: "pi-part", link: "/api/pi-part" },
+          ],
+        },
+        {
+          text: "Configuration",
+          items: [
+            { text: "Services", link: "/api/services" },
+          ],
+        },
+        {
+          text: "Lifecycle",
+          items: [
+            { text: "Generic", link: "/api/lifecycle" },
+          ],
+        },
+      ],
+    },
 
     // search: {
     //   provider: "algolia",
@@ -60,6 +117,7 @@ export default defineConfig({
     // },
 
     socialLinks: [
+      { icon: "discord", link: "https://discord.gg/kKJ2FZmK8t" },
       { icon: "github", link: "https://github.com/picardjs/picard" },
     ],
   },

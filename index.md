@@ -11,11 +11,11 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /docs/examples
+      text: Get Started
+      link: /guide/
     - theme: alt
-      text: API Examples
-      link: /docs/examples/api
+      text: Why Picard.js?
+      link: /guide/why
 
 features:
   - title: Scalable
@@ -26,7 +26,7 @@ features:
     details: Orchestrate micro frontends on the server, on the client, and in native apps.
   - title: Increase Compatibility
     icon: <img src="/icons/compatibility.png">
-    details: Just works with micro frontends using single-spa, Piral, Module Federation and Native Federation.
+    details: Just works with micro frontends using single-spa, Piral, Module Federation, and Native Federation.
 ---
 
 <style>
@@ -48,5 +48,9 @@ features:
   :root {
     --vp-home-hero-image-filter: blur(68px);
   }
+}
+
+html:not(.dark) .icon > img {
+  filter: invert(1);
 }
 </style>
