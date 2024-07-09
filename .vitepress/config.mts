@@ -30,14 +30,37 @@ export default defineConfig({
     ["meta", { property: "og:url", content: "https://picard.js.org/" }],
   ],
 
+  lastUpdated: true,
   cleanUrls: true,
+
+  sitemap: {
+    hostname: "https://picard.js.org",
+  },
 
   themeConfig: {
     logo: { src: "/picard-logo-mini.png", width: 24, height: 24 },
 
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2024-present smapiot",
+    },
+
     nav: [
       { text: "Guide", link: "/guide/" },
       { text: "API", link: "/api/" },
+      {
+        text: "0.1.0",
+        items: [
+          {
+            text: "Changelog",
+            link: "https://github.com/picardjs/picard/blob/main/CHANGELOG.md",
+          },
+          {
+            text: "Contributing",
+            link: "https://github.com/picardjs/picard/blob/main/.github/CONTRIBUTING.md",
+          },
+        ],
+      },
     ],
 
     sidebar: {
@@ -68,8 +91,14 @@ export default defineConfig({
         {
           text: "Formats",
           items: [
-            { text: "Module Federation", link: "/guide/formats/module-federation" },
-            { text: "Native Federation", link: "/guide/formats/native-federation" },
+            {
+              text: "Module Federation",
+              link: "/guide/formats/module-federation",
+            },
+            {
+              text: "Native Federation",
+              link: "/guide/formats/native-federation",
+            },
             { text: "Pilet", link: "/guide/formats/pilet" },
           ],
         },
@@ -94,17 +123,18 @@ export default defineConfig({
         },
         {
           text: "Configuration",
-          items: [
-            { text: "Services", link: "/api/services" },
-          ],
+          items: [{ text: "Services", link: "/api/services" }],
         },
         {
           text: "Lifecycle",
-          items: [
-            { text: "Generic", link: "/api/lifecycle" },
-          ],
+          items: [{ text: "Generic", link: "/api/lifecycle" }],
         },
       ],
+    },
+
+    editLink: {
+      pattern: "https://github.com/picardjs/picardjs.github.io/edit/main/:path",
+      text: "Edit this page on GitHub",
     },
 
     // search: {

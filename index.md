@@ -7,7 +7,7 @@ hero:
   text: "Orchestrator for Micro Frontends"
   tagline: "The Captain for Shipping the Next Generation of Micro Frontends Federation and Beyond"
   image:
-    src: /picard-logo-large.webp
+    src: /picard-logo-shadow.webp
     alt: VitePress
   actions:
     - theme: brand
