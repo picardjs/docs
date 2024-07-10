@@ -1,6 +1,6 @@
-# Using Picard.js with Node.js
+# Using Picard.js with Bundlers for SPAs
 
-Using Picard.js in Node.js works by importing the `initializePicard` function from the `picard-js/node` module.
+Using Picard.js with bundlers to produce a SPA works by importing the `initializePicard` function from the `picard-js/client` module.
 
 ## Installation
 
@@ -27,7 +27,7 @@ Unlike the [browser variant](./browser.md) you will need to start Picard explici
 The following shows how this is done.
 
 ```js
-import { initializePicard } from 'picard-js/node';
+import { initializePicard } from 'picard-js/client';
 
 const picard = initializePicard({
   // configure here

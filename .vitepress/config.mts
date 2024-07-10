@@ -87,6 +87,7 @@ export default defineConfig({
           text: "Variants",
           items: [
             { text: "Browser", link: "/guide/variants/browser" },
+            { text: "Client", link: "/guide/variants/client" },
             { text: "Node.js", link: "/guide/variants/node" },
             { text: "Electron", link: "/guide/variants/electron" },
           ],
@@ -121,11 +122,14 @@ export default defineConfig({
       "/api/": [
         {
           text: "API",
+          items: [{ text: "Overview", link: "/api/" }],
+        },
+        {
+          text: "Web Components",
           items: [
-            { text: "Overview", link: "/api/" },
-            { text: "pi-component", link: "/api/pi-component" },
-            { text: "pi-slot", link: "/api/pi-slot" },
-            { text: "pi-part", link: "/api/pi-part" },
+            { text: "pi-component", link: "/api/components/pi-component" },
+            { text: "pi-slot", link: "/api/components/pi-slot" },
+            { text: "pi-part", link: "/api/components/pi-part" },
           ],
         },
         {
@@ -140,7 +144,7 @@ export default defineConfig({
         },
         {
           text: "Lifecycle",
-          items: [{ text: "Generic Lifecycle", link: "/api/lifecycle" }],
+          items: [{ text: "Generic Lifecycle", link: "/api/lifecycle/" }],
         },
       ],
     },

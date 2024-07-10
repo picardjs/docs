@@ -36,3 +36,9 @@ Now start creating regions in the HTML for the components of the micro frontends
 ```
 
 The `pi-component` web component acts as a container element to display the content brought in by the component (in this case `MyComponent`) of the referenced micro frontend (specified by its `source`, `format`, and - necessary in this case - `remote-name`).
+
+Since Picard.js only exposes web components you can always safely write them in your HTML. Worst thing that can happen is that nothing renders.
+
+That's it for the basics :tada:!
+
+Let's go into more details.

@@ -1,3 +1,3 @@
-# Generic Component Lifecycle
+# Generic Component Lifecycle API
 
 ...
