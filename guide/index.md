@@ -31,8 +31,8 @@ Now start creating regions in the HTML for the components of the micro frontends
   name="MyComponent"
   source="https://yourcompany.com/example/remoteEntry.js"
   format="module"
-  remote-name="example">
-</pi-component>
+  remote-name="example"
+></pi-component>
 ```
 
 The `pi-component` web component acts as a container element to display the content brought in by the component (in this case `MyComponent`) of the referenced micro frontend (specified by its `source`, `format`, and - necessary in this case - `remote-name`).
