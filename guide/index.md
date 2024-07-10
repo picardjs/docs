@@ -1,85 +1,38 @@
-# Guide
+# Getting Started
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+Picard.js is a micro frontend orchestrator. This means, that the job of Picard.js is to load micro frontends, run them, and mount, update, unmount the components exposed by the micro frontends.
 
-## Syntax Highlighting
+![Orchestrator](../images/orchestrator.svg)
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+Picard.js exists as a drop-in script for your website, as well as a module that you can include in your application.
 
-**Input**
+Here is how to include the drop-in script in your website:
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
+```html
+<script src="https://unpkg.com/picard-js"></script>
 ```
 
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
+This will automatically set up and run Picard.js on your website.
 
 ::: tip
-This is a tip.
-:::
+Alternatively, if you don't like unpkg you can also use jsdelivr:
 
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
+```html
+<script src="https://cdn.jsdelivr.net/npm/picard-js"></script>
 ```
 
-**Output**
-
-::: info
-This is an info box.
+In fact, any CDN that uses npm as a source will work.
 :::
 
-::: tip
-This is a tip.
-:::
+Now start creating regions in the HTML for the components of the micro frontends you'd like to display:
 
-::: warning
-This is a warning.
-:::
+```html
+<pi-component
+  name="MyComponent"
+  source="https://yourcompany.com/example/remoteEntry.js"
+  format="module"
+  remote-name="example">
+</pi-component>
+```
 
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+The `pi-component` web component acts as a container element to display the content brought in by the component (in this case `MyComponent`) of the referenced micro frontend (specified by its `source`, `format`, and - necessary in this case - `remote-name`).

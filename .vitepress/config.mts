@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { OramaPlugin } from "@orama/plugin-vitepress";
 
 export default defineConfig({
   title: "Picard.js",
@@ -70,6 +71,8 @@ export default defineConfig({
           items: [
             { text: "Getting Started", link: "/guide/" },
             { text: "Why Picard.js?", link: "/guide/why" },
+            { text: "Features", link: "/guide/features" },
+            { text: "Comparisons", link: "/guide/comparisons" },
           ],
         },
         {
@@ -99,7 +102,7 @@ export default defineConfig({
               text: "Native Federation",
               link: "/guide/formats/native-federation",
             },
-            { text: "Pilet", link: "/guide/formats/pilet" },
+            { text: "Pilet", link: "/guide/formats/pilet-v2" },
           ],
         },
         {
@@ -108,6 +111,10 @@ export default defineConfig({
             { text: "Default", link: "/guide/frameworks/default" },
             { text: "HTML", link: "/guide/frameworks/html" },
             { text: "single-spa", link: "/guide/frameworks/single-spa" },
+            {
+              text: "Web Components",
+              link: "/guide/frameworks/web-components",
+            },
           ],
         },
       ],
@@ -123,11 +130,17 @@ export default defineConfig({
         },
         {
           text: "Configuration",
-          items: [{ text: "Services", link: "/api/services" }],
+          items: [
+            {
+              text: "Initialization Options",
+              link: "/api/configuration/options",
+            },
+            { text: "Runtime Services", link: "/api/configuration/services" },
+          ],
         },
         {
           text: "Lifecycle",
-          items: [{ text: "Generic", link: "/api/lifecycle" }],
+          items: [{ text: "Generic Lifecycle", link: "/api/lifecycle" }],
         },
       ],
     },
@@ -137,18 +150,36 @@ export default defineConfig({
       text: "Edit this page on GitHub",
     },
 
-    // search: {
-    //   provider: "algolia",
-    //   options: {
-    //     appId: "8J64VVRP8K",
-    //     apiKey: "a18e2f4cc5665f6602c5631fd868adfd",
-    //     indexName: "vitepress",
-    //   },
-    // },
-
     socialLinks: [
-      { icon: "discord", link: "https://discord.gg/kKJ2FZmK8t" },
-      { icon: "github", link: "https://github.com/picardjs/picard" },
+      {
+        icon: "discord",
+        link: "https://discord.gg/kKJ2FZmK8t",
+        ariaLabel: "Discord",
+      },
+      {
+        icon: "github",
+        link: "https://github.com/picardjs/picard",
+        ariaLabel: "GitHub",
+      },
+      {
+        icon: "npm",
+        link: "https://www.npmjs.com/package/picard-js",
+        ariaLabel: "npm",
+      },
+      {
+        icon: {
+          svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>JSR</title><path d="M3.692 5.538v3.693H0v7.384h7.385v1.847h12.923v-3.693H24V7.385h-7.385V5.538Zm1.846 1.847h1.847v7.384H1.846v-3.692h1.846v1.846h1.846zm3.693 0h5.538V9.23h-3.692v1.846h3.692v5.538H9.231V14.77h3.692v-1.846H9.231Zm7.384 1.846h5.539v3.692h-1.846v-1.846h-1.846v5.538h-1.847z"/></svg>',
+        },
+        link: "https://jsr.io/@picard/js",
+        ariaLabel: "JSR",
+      },
     ],
+  },
+
+  extends: {
+    vite: {
+      // @ts-ignore
+      plugins: [OramaPlugin()],
+    },
   },
 });

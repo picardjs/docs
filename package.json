@@ -4,13 +4,16 @@
   "description": "Website for Picard.js",
   "license": "MIT",
   "author": "Florian Rappl",
-  "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "vitepress": "1.0.1"
-  },
   "scripts": {
     "start": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@orama/plugin-vitepress": "^2.0.21"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "vitepress": "1.0.1"
   }
 }
