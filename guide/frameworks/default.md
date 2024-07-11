@@ -30,11 +30,12 @@ A simple implementation that does nothing except for satisfying the interface fo
 
 ```js
 const component = {
-  async bootstrap() {},
+  async load() {},
   mount() {},
   update() {},
   unmount() {},
   async unload() {},
+  async bootstrap() {},
   async stringify() {
     return '';
   },
@@ -52,7 +53,7 @@ import { renderToString } from 'react-dom/server';
 import Component from './Component';
 
 const component = {
-  async bootstrap() {},
+  async load() {},
   mount(container, props, locals) {
     locals.root = createRoot(container);
     locals.root.render(<Component {...props} />);
@@ -64,10 +65,11 @@ const component = {
     locals.root.unmount();
   },
   async unload() {},
+  async bootstrap() {},
   async stringify() {
     return renderToString(<Component {...props} />);
   },
 };
 ```
 
-In this example the `bootstrap` and `unload` functions remain unused. In general you might want to use them to start (or end) some loading process that is relevant for the given component.
+In this example the `load`, `unload`, and `bootstrap` functions remain unused. In general you might want to use them to start (or end) some loading process that is relevant for the given component.
