@@ -62,3 +62,11 @@ When Picard.js starts it will look for a script tag with the `type` set to `pi-s
 ```
 
 The provided state must match the format of Picard's internal state. One way to get this is to retrieve an export of the internal state, e.g., using the `readState()` function on `window.picard`.
+
+::: warning
+The provided state is not type-checked. As a result, any wrong or unexpected input here might lead to some undefined behavior later on.
+
+Always just take the state as it was exported via `JSON.stringify(picard.readState())` as input for a `pi-state` script.
+:::
+
+Ideally, you don't use this thing directly, but rely on Picard.js doing it implicitly, e.g., when using SSR with an islands architecture model.

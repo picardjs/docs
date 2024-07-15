@@ -29,7 +29,7 @@ features:
     details: Just works with micro frontends using single-spa, Piral, Module Federation, and Native Federation.
 ---
 
-<style>
+<style is:global>
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, #ff007f 30%, #41d1ff);

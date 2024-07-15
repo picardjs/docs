@@ -43,7 +43,7 @@ export default defineConfig({
 
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2024-present smapiot",
+      copyright: "Copyright © 2024-present smapiot GmbH",
     },
 
     nav: [

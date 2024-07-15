@@ -14,7 +14,7 @@ One of the reasons why Picard.js might be interesting for you is that it allows 
 
 For owners of existing micro frontend solutions the integration of other micro frontends will no longer break due to technology incompatibilities. If two micro frontends have been written - one using Module Federation and another one using Native Federation - you will no longer require some frankenstein solution, but instead can just embed both; and it will just work.
 
-👉 Want to see this in action? [Example online](https://github.com/picardjs/picard/blob/main/examples/10-dependencies-sharing/index.html)
+:point_right: Want to see this in action? [Example online](https://github.com/picardjs/picard/blob/main/examples/10-dependencies-sharing/index.html)
 
 ### Error Handling
 
@@ -24,7 +24,7 @@ Error handling has been one of the largest problems in solutions like Module Fed
 
 With Picard.js error handling is integrated from the ground up. You reference an invalid component? Nothing bad will happen. The component crashes or does not accept the given inputs? The solution will just continue - if you care you can pick up the error and display something else instead.
 
-👉 Want to see this in action? [Example online](https://github.com/picardjs/picard/blob/main/examples/06-static-page-single-spa/mfs/red/src/Product.jsx#L87)
+:point_right: Want to see this in action? [Example online](https://github.com/picardjs/picard/blob/main/examples/06-static-page-single-spa/mfs/red/src/Product.jsx#L87)
 
 ### Technology Agnostic
 
@@ -34,7 +34,7 @@ A design goal of Picard.js was to work without any tooling. As such owners of ex
 
 One advantage of this approach is that - out-of-the-box - Picard.js is technology agnostic. While other approaches require specific tooling to work we don't need this here. As a result, Picard.js can also be used with tooling that is rather micro frontend hostile such as the Angular CLI. As long as there is some HTML somewhere you can add the script and use the web components.
 
-👉 Want to see this in action? [Example online](https://github.com/picardjs/picard/blob/main/examples/01-static-page/index.html)
+:point_right: Want to see this in action? [Example online](https://github.com/picardjs/picard/blob/main/examples/01-static-page/index.html)
 
 ## Why use a Library as Orchestrator?
 
