@@ -50,7 +50,7 @@ export default defineConfig({
       { text: "Guide", link: "/guide/" },
       { text: "API", link: "/api/" },
       {
-        text: "0.1.0",
+        text: "0.2.3",
         items: [
           {
             text: "Changelog",
