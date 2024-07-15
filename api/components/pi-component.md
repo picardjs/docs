@@ -39,10 +39,6 @@ All events are emitted through the Picard.js event system.
 ```ts
 interface ChangedDataEvent {
   /**
-   * The previously deserialized data.
-   */
-  previous: any;
-  /**
    * The currently deserialized data.
    */
   current: any;
