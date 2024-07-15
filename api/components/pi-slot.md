@@ -6,12 +6,15 @@
 | ---------------------- | ----- | ---------------------------------------------------------------- |
 | `name`                 |       | Name of the components to look for                               |
 | `data`                 |       | The data to forward to the components ("props")                  |
+| `rel`                  | (1)   | The behavior of the slot                                         |
 | `item-template-id`     |       | The ID of a template to wrap each found component                |
 | `fallback-template-id` |       | The ID of a template to display as fallback                      |
-| `order-by`             | (1)   | Defines the ordering of the found components                     |
+| `order-by`             | (2)   | Defines the ordering of the found components                     |
 | `reverse-order`        |       | If set, reverses the order in which the components are displayed |
 
-The ordering key must be one of `cid` (order by their component ID), `source` (order by their micro frontend name), `time` (order by the time the component was registered), and `none` (just take the order in which the components have been found.)
+(1) The slot behavior defines the slot's relationship to a Picard.js-internal service that is responsible for actually matching the `name` and the `data` props. Initially, a single behavior named `router` is available. This behavior matches the provided name as a `page:`-component using dynamic route matching.
+
+(2) The ordering key must be one of `cid` (order by their component ID), `source` (order by their micro frontend name), `time` (order by the time the component was registered), and `none` (just take the order in which the components have been found.)
 
 ## Properties
 
