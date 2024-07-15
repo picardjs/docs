@@ -2,6 +2,8 @@
 
 The `pi-component` can be used to render a component from a micro frontend on a website.
 
+![`pi-component`](../../images/pi-component.svg)
+
 Consider the following HTML:
 
 ```html

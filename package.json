@@ -9,11 +9,9 @@
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
-  "dependencies": {
-    "@orama/plugin-vitepress": "^2.0.21"
-  },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "vitepress": "1.0.1"
+    "@orama/plugin-vitepress": "^2",
+    "gh-pages": "^6",
+    "vitepress": "^1"
   }
 }

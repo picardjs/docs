@@ -4,6 +4,8 @@ The `pi-part` component is available exclusively on the server. On the client, t
 
 This component is essentially a replacement rule that is applied by the `decorate` function of Picard.
 
+![`pi-part`](../../images/pi-part.svg)
+
 Consider the following HTML:
 
 ```html

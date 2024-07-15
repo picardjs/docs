@@ -21,6 +21,8 @@ interface ConverterService {
 }
 ```
 
+For an explanation of the `ComponentLifecycle` see [Generic component Lifecycle](../lifecycle/index.md).
+
 ```ts
 interface ContainerService {
   createContainer(details: any): Promise<ComponentGetter>;

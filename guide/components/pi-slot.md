@@ -2,6 +2,8 @@
 
 The `pi-slot` component introduces a micro frontend independent rendering slot. It will automatically look into all currently loaded micro frontends - trying to locate exposed components by the given `name` attribute. All found components will be rendered inside the `pi-slot`.
 
+![`pi-slot`](../../images/pi-slot.svg)
+
 Consider the following HTML:
 
 ```html

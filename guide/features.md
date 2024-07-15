@@ -4,6 +4,8 @@ Picard.js is your comprehensive solution for orchestrating micro frontends, prov
 
 ## Multi Platform
 
+![Multi Platform](../images/multi-platform.svg)
+
 Picard.js is designed to be versatile and adaptable across various environments. Whether you're working in a browser, Node.js, Deno, or Electron, Picard.js seamlessly orchestrates micro frontends, ensuring consistent performance and compatibility.
 
 ## Multi Format
@@ -11,6 +13,8 @@ Picard.js is designed to be versatile and adaptable across various environments.
 With Picard.js, you can integrate and manage multiple micro frontend formats effortlessly. It supports Module Federation, Native Federation, Pilets, and more, providing flexibility and ease of use for diverse development needs.
 
 ## Multi Framework
+
+![Multi Framework](../images/multi-framework.svg)
 
 Picard.js excels at integrating various frameworks, including single-spa, HTML fragments, and web components. This multi-framework support allows you to choose the best tools for each part of your application, fostering innovation and efficiency.
 
@@ -31,5 +35,7 @@ Picard.js provides robust routing capabilities, whether you need client-side or 
 Debugging with Picard.js is straightforward and integrates seamlessly into your existing development workflows. It supports native debugging processes and extends compatibility with micro frontend debugging utilities such as the [Piral Inspector](https://github.com/smapiot/piral-inspector), enhancing your ability to identify and resolve issues quickly.
 
 ## Islands Architecture
+
+![Islands Architecture](../images/islands-architecture.svg)
 
 Picard.js facilitates the creation of island architectures, enabling server-side rendered (SSR) applications that can hydrate and continue on the client side. This approach optimizes performance and user experience, combining the best of SSR and client-side rendering.
