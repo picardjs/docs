@@ -14,7 +14,7 @@
 
 (1) The slot behavior defines the slot's relationship to a Picard.js-internal service that is responsible for actually matching the `name` and the `data` props. Initially, a single behavior named `router` is available. This behavior matches the provided name as a `page:`-component using dynamic route matching.
 
-(2) The ordering key must be one of `cid` (order by their component ID), `source` (order by their micro frontend name), `time` (order by the time the component was registered), and `none` (just take the order in which the components have been found.)
+(2) The ordering key must be one of `cid` (order by their component ID), `origin` (order by their micro frontend name), `time` (order by the time the component was registered), and `none` (just take the order in which the components have been found - usually equivalent to `time` and the default value).
 
 ## Properties
 
