@@ -29,7 +29,7 @@ features:
 ---
 
 <style>
-:root {
+#VPContent {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, #ff007f 30%, #41d1ff);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #ff007f 50%, #47caff 50%);
@@ -38,13 +38,13 @@ features:
 }
 
 @media (min-width: 640px) {
-  :root {
+  #VPContent {
     --vp-home-hero-image-filter: blur(56px);
   }
 }
 
 @media (min-width: 960px) {
-  :root {
+  #VPContent {
     --vp-home-hero-image-filter: blur(68px);
   }
 }
