@@ -12,6 +12,10 @@
 | `bootstrap`       | Server |                                                       | `Promise<void>`   |
 | `stringify`       | Server | `props` (1)                                           | `Promise<string>` |
 
+::: info
+Hydration scenarios are covered via `mount` by looking either into `container` (would be non-empty in a hydration scenario) or into `locals` (which would contain a truthy value for `hydrate`, i.e., `!!locals.hydrate` would be `true`).
+:::
+
 (1) the `props` are the deserialized object from the `data` property
 
 (2) the `locals` is an (initially) empty object that can be used at will to transport information between the different lifecycle methods; it is created per component instance

@@ -50,7 +50,7 @@ export default defineConfig({
       { text: "Guide", link: "/guide/" },
       { text: "API", link: "/api/" },
       {
-        text: "0.2.3",
+        text: "0.3.0",
         items: [
           {
             text: "Changelog",
@@ -73,6 +73,7 @@ export default defineConfig({
             { text: "Why Picard.js?", link: "/guide/why" },
             { text: "Features", link: "/guide/features" },
             { text: "Comparisons", link: "/guide/comparisons" },
+            { text: "FAQ", link: "/guide/faq" },
           ],
         },
         {
@@ -140,6 +141,23 @@ export default defineConfig({
               link: "/api/configuration/options",
             },
             { text: "Runtime Services", link: "/api/configuration/services" },
+          ],
+        },
+        {
+          text: "Discovery Services",
+          items: [
+            {
+              text: "Piral Feed Service",
+              link: "/api/discovery/piral-feed-service",
+            },
+            {
+              text: "Discovery Schema",
+              link: "/api/discovery/discovery-schema",
+            },
+            {
+              text: "Native Federation Manifest",
+              link: "/api/discovery/native-federation-manifest",
+            },
           ],
         },
         {
