@@ -12,9 +12,12 @@
 | `remote-type`          | (3)   | The type of the remote in case of Module Federation v1 |
 | `data`                 |       | The data to forward to the component ("props")         |
 | `framework`            |       | The framework to use for displaying the component      |
+| `client`               | (4)   | The client-side rendering hints for the component      |
 | `fallback-template-id` |       | The ID of a template to display as fallback            |
 
 If (1) is used the other attribute groups (2 or 3) are not taken into consideration. If `source` is a URL leading to a new micro frontend, group (3) is also used. Otherwise, (3) has no effect.
+
+(4) can be one of `none` (not rendered/hydrated on the client), `load` (default value, loaded as soon as possible), `idle` (loaded when the page is idle), or `visible` (loaded when the container becomes visible).
 
 ## Properties
 
