@@ -134,6 +134,10 @@ export default defineConfig({
           ],
         },
         {
+          text: "Service Endpoints",
+          items: [{ text: "Fragment", link: "/api/endpoints/fragment" }],
+        },
+        {
           text: "Configuration",
           items: [
             {
